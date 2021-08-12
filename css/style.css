@@ -1,0 +1,325 @@
+div.dataTables_wrapper div.dataTables_length select,
+div.dataTables_wrapper div.dataTables_length input {
+    width: auto;
+}
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row label {
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+}
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select span,
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select .select-dropdown {
+    margin-top: 1rem;
+}
+div.dataTables_wrapper div.dataTables_length label,
+div.dataTables_wrapper div.dataTables_filter label {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+    text-align: left;
+    color: #f4f4f4;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+    margin-right: 2.2em;
+}
+div.dataTables_wrapper div.dataTables_filter select,
+div.dataTables_wrapper div.dataTables_filter input {
+    width: auto;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+div.dataTables_wrapper div.dataTables_info,
+div.dataTables_wrapper div.dataTables_paginate {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+    margin: 0;
+    text-align: right;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-pack: end;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .page-link:focus {
+    background-color: #4285f4;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item .page-link:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+@media (max-width: 767px) {
+    div.dataTables_wrapper div .dataTables_length,
+    div.dataTables_wrapper div .dataTables_filter,
+    div.dataTables_wrapper div .dataTables_info,
+    div.dataTables_wrapper div .dataTables_paginate ul.pagination {
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        -webkit-box-pack: center;
+    }
+}
+.bs-select select {
+    display: inline-block !important;
+}
+table.dataTable thead {
+    cursor: pointer;
+}
+table.dataTable thead > tr > th.sorting_asc,
+table.dataTable thead > tr > th.sorting_desc,
+table.dataTable thead > tr > th.sorting,
+table.dataTable thead > tr > td.sorting_asc,
+table.dataTable thead > tr > td.sorting_desc,
+table.dataTable thead > tr > td.sorting {
+    padding-right: 30px;
+}
+table.dataTable thead > tr > th:active,
+table.dataTable thead > tr > td:active {
+    outline: none;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    position: relative;
+    cursor: pointer;
+}
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:after {
+    position: absolute;
+    bottom: 0.9em;
+    display: block;
+    opacity: 0.3;
+}
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before {
+    right: 1em;
+    font-family: FontAwesome, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    content: "\f0de";
+}
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+    right: 16px;
+    font-family: FontAwesome, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    content: "\f0dd";
+}
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:after {
+    opacity: 1;
+}
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:after {
+    opacity: 0;
+}
+
+/*CUSTOM*/
+
+a{
+    color: #2f8fce;
+}
+
+.page-item.active .page-link{
+        background-color: #2f8fce;
+    border-color: #2f8fce;
+}
+
+.page-link{
+    color: #2f8fce;
+}
+
+table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc{
+	background-color:rgba(222, 226, 230, 0.5)
+}
+
+/*td{
+    padding:5px;
+}*/
+
+td.sorting_1{
+	background-color:rgba(222, 226, 230, 0.2)
+}
+#table-container {
+        width: 100%;
+    }
+
+
+table{
+	margin: 0 auto;
+     width: 100%;
+     clear: both;
+     /*border-collapse: collapse;*/
+     /*table-layout: fixed;*/
+     /*word-wrap:normal;*/
+     font-size:13px;
+	font-family: 'PT Serif', sans-serif;
+    color:#333333;
+}
+
+tr{
+    height: 50px
+}
+
+.tooltip {
+  pointer-events: none;
+}
+
+#header{
+    width:100%;
+    height:220px;
+    margin: auto 0;
+    background-image: url(../img/Sea-wave-in-north-part-of-Atlantic-ocean-during-storm.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    
+}
+
+#header-title{
+    display: inline-block;
+    padding-top:3em;
+    padding-left:3em;
+    width:95%;
+}
+
+#header-title h1{
+    color:#ffffff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-shadow: 1px 1px 8px #333333;
+    font-size:36px;
+}
+
+#header-title p{
+    font-family: 'PT Serif', serif;
+    color:#ffffff;
+    font-size:14px;
+}
+
+#logo{
+    display: inline-flex;
+    margin-top: 3em;
+    width: 5%;
+    margin-left: 3em;
+
+}
+
+#logo img{
+    height: 30px;
+    width: auto;
+}
+
+.toggle{
+    text-align: right;
+    margin: 0.4em 0; 
+    margin-right: 0.4em;
+    cursor: pointer;
+}
+
+h5{
+    font-family: 'PT Sans', sans-serif;
+    color:#f4f4f4;
+}
+
+a.toggle-vis{
+    color:#f4f4f4;
+    cursor: pointer;
+}
+
+#header-clear{
+    width: 100%;
+    height:174px;
+}
+
+.dataTables_scroll{
+    border: solid 1.6px #333333;
+}
+
+.report-head{
+    border-left:1.6px solid #333333;
+}
+
+/*.report-head:nth-child(0){
+    border-left:1px solid #333333;   
+}*/
+
+.table{
+    margin-bottom:0rem;
+}
+
+.table thead th{
+    border-bottom:1.6px solid #333333;
+    background-color: rgba(11, 69, 114, 0.6);
+    color:#f4f4f4;
+}
+
+.highlight{
+    background-color: moccasin;
+}
+
+@media (max-width:470px){
+    #header-title{
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+    }
+    #header-title h1{
+        font-size:25px;
+    }
+    h5{
+        font-size:1rem;
+    }
+    #logo{
+        margin-top: 1.5em;
+        width: 5%;
+        margin-left: 1.5em;
+    }
+}
+@media (max-width:365px){
+    h5{
+        font-size:0.8rem;
+    }
+    #logo{
+        margin-top: 0.8em;
+    }
+    #logo img{
+        height:20px;
+    }
+    }
+.column-border{
+    border-left:0.1px solid #d3d3d3;
+}
+
+.border-topic{
+    border-left: 1px solid #333333;
+  }
+
+  .reports{
+    border-left: 2px solid #333333;
+  }
+
+
+
